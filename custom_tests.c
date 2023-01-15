@@ -98,36 +98,335 @@ bool test_is_vowel() {
 
 bool test_is_tail() {
   // TODO: Implement this function.
+  char testcase_1 = 'w';
+  bool output_1 = is_tail(testcase_1);
+  if (!assert_true("output_1", output_1)) {
+    return false;
+  } 
+
+  char testcase_2 = 'a';
+  bool output_2 = is_tail(testcase_2);
+  if (!assert_true("output_2", output_2)) {
+    return false;
+  }
+
+  char testcase_3 = 's';
+  bool output_3 = is_tail(testcase_3);
+  if (!assert_true("output_3", output_3)) {
+    return false;
+  }
+
+  char testcase_4 = 'd';
+  bool output_4 = is_tail(testcase_4);
+  if (!assert_true("output_4", output_4)) {
+    return false;
+  }
+
+  char testcase_5 = 'q';
+  bool output_5 = is_tail(testcase_5);
+  if (!assert_false("output_5", output_5)) {
+    return false;
+  }
+
   return true;
 }
 
 bool test_is_head() {
   // TODO: Implement this function.
+  char testcase_1 = 'W';
+  bool output_1 = is_head(testcase_1);
+  if (!assert_true("output_1", output_1)) {
+    return false;
+  } 
+
+  char testcase_2 = 'A';
+  bool output_2 = is_head(testcase_2);
+  if (!assert_true("output_2", output_2)) {
+    return false;
+  }
+
+  char testcase_3 = 'S';
+  bool output_3 = is_head(testcase_3);
+  if (!assert_true("output_3", output_3)) {
+    return false;
+  }
+
+  char testcase_4 = 'D';
+  bool output_4 = is_head(testcase_4);
+  if (!assert_true("output_4", output_4)) {
+    return false;
+  }
+
+  char testcase_5 = 'x';
+  bool output_5 = is_head(testcase_5);
+  if (!assert_true("output_5", output_5)) {
+    return false;
+  }
+
+  char testcase_6 = 'q';
+  bool output_6 = is_head(testcase_6);
+  if (!assert_false("output_6", output_6)) {
+    return false;
+  }
+
   return true;
 }
 
 bool test_is_snake() {
   // TODO: Implement this function.
+
+  char testcase_1 = 'w';
+  bool output_1 = is_snake(testcase_1);
+  if (!assert_true("output_1", output_1)) {
+    return false;
+  } 
+
+  char testcase_2 = 'a';
+  bool output_2 = is_snake(testcase_2);
+  if (!assert_true("output_2", output_2)) {
+    return false;
+  }
+
+  char testcase_3 = 's';
+  bool output_3 = is_snake(testcase_3);
+  if (!assert_true("output_3", output_3)) {
+    return false;
+  }
+
+  char testcase_4 = 'd';
+  bool output_4 = is_snake(testcase_4);
+  if (!assert_true("output_4", output_4)) {
+    return false;
+  }
+
+  char testcase_5 = 'W';
+  bool output_5 = is_snake(testcase_5);
+  if (!assert_true("output_5", output_5)) {
+    return false;
+  } 
+
+  char testcase_6 = 'A';
+  bool output_6 = is_snake(testcase_6);
+  if (!assert_true("output_6", output_6)) {
+    return false;
+  }
+
+  char testcase_7 = 'S';
+  bool output_7 = is_snake(testcase_7);
+  if (!assert_true("output_7", output_7)) {
+    return false;
+  }
+
+  char testcase_8 = 'D';
+  bool output_8 = is_snake(testcase_8);
+  if (!assert_true("output_8", output_8)) {
+    return false;
+  }
+
+  char testcase_9 = 'x';
+  bool output_9 = is_snake(testcase_9);
+  if (!assert_true("output_9", output_9)) {
+    return false;
+  }
+ 
+  char testcase_10 = '^';
+  bool output_10 = is_snake(testcase_10);
+  if (!assert_true("output_10", output_10)) {
+    return false;
+  }
+
+  char testcase_11 = '<';
+  bool output_11 = is_snake(testcase_11);
+  if (!assert_true("output_11", output_11)) {
+    return false;
+  }
+
+  char testcase_12 = 'v';
+  bool output_12 = is_snake(testcase_12);
+  if (!assert_true("output_12", output_12)) {
+    return false;
+  }
+
+  char testcase_13 = '>';
+  bool output_13 = is_snake(testcase_13);
+  if (!assert_true("output_13", output_13)) {
+    return false;
+  }
+
+  char testcase_14 = 'q';
+  bool output_14 = is_snake(testcase_14);
+  if (!assert_false("output_14", output_14)) {
+    return false;
+  }
+
   return true;
 }
 
 bool test_body_to_tail() {
   // TODO: Implement this function.
+  char testcase_1 = '<';
+  char output_1 = body_to_tail(testcase_1);
+  if (!assert_equals_char("output_1", 'a', output_1)) {
+    return false;
+  }
+
+  char testcase_2 = '^';
+  char output_2 = body_to_tail(testcase_2);
+  if (!assert_equals_char("output_2", 'w', output_2)) {
+    return false;
+  }
+
+  char testcase_3 = '>';
+  char output_3 = body_to_tail(testcase_3);
+  if (!assert_equals_char("output_3", 'd', output_3)) {
+    return false;
+  }
+
+  char testcase_4 = 'v';
+  char output_4 = body_to_tail(testcase_4);
+  if (!assert_equals_char("output_4", 's', output_4)) {
+    return false;
+  }
+
+  char testcase_5 = 'q';
+  char output_5 = body_to_tail(testcase_5);
+  if (!assert_equals_char("output_5", '?', output_5)) {
+    return false;
+  }
+
   return true;
 }
 
 bool test_head_to_body() {
   // TODO: Implement this function.
+
+  char testcase_1 = 'W';
+  char output_1 = head_to_body(testcase_1);
+  if (!assert_equals_char("output_1", '^', output_1)) {
+    return false;
+  }
+
+  char testcase_2 = 'A';
+  char output_2 = head_to_body(testcase_2);
+  if (!assert_equals_char("output_2", '<', output_2)) {
+    return false;
+  }
+
+  char testcase_3 = 'S';
+  char output_3 = head_to_body(testcase_3);
+  if (!assert_equals_char("output_3", 'v', output_3)) {
+    return false;
+  }
+
+  char testcase_4 = 'D';
+  char output_4 = head_to_body(testcase_4);
+  if (!assert_equals_char("output_4", '>', output_4)) {
+    return false;
+  }
+
+  char testcase_5 = 'q';
+  char output_5 = head_to_body(testcase_5);
+  if (!assert_equals_char("output_5", '?', output_5)) {
+    return false;
+  }
+
   return true;
 }
 
 bool test_get_next_x() {
   // TODO: Implement this function.
+  unsigned int cur_row = 2;
+
+  char testcase_1 = 'v';
+  unsigned int output_1 = get_next_row(cur_row, testcase_1);
+  if (!assert_equals_int("output_1", 3, output_1)) {
+    return false;
+  }
+
+  char testcase_2 = 's';
+  unsigned int output_2 = get_next_row(cur_row, testcase_2);
+  if (!assert_equals_int("output_2", 3, output_2)) {
+    return false;
+  }
+
+  char testcase_3 = 'S';
+  unsigned int output_3 = get_next_row(cur_row, testcase_3);
+  if (!assert_equals_int("output_3", 3, output_3)) {
+    return false;
+  }
+
+  char testcase_4 = '^';
+  unsigned int output_4 = get_next_row(cur_row, testcase_4);
+  if (!assert_equals_int("output_4", 1, output_4)) {
+    return false;
+  }
+
+  char testcase_5 = 'w';
+  unsigned int output_5 = get_next_row(cur_row, testcase_5);
+  if (!assert_equals_int("output_5", 1, output_5)) {
+    return false;
+  }
+
+  char testcase_6 = 'W';
+  unsigned int output_6 = get_next_row(cur_row, testcase_6);
+  if (!assert_equals_int("output_6", 1, output_6)) {
+    return false;
+  }
+
+  char testcase_7 = 'q';
+  unsigned int output_7 = get_next_row(cur_row, testcase_7);
+  if (!assert_equals_int("output_7", 2, output_7)) {
+    return false;
+  }
+
   return true;
 }
 
 bool test_get_next_y() {
   // TODO: Implement this function.
+  unsigned int cur_col = 2;
+
+  char testcase_1 = '>';
+  unsigned int output_1 = get_next_col(cur_col, testcase_1);
+  if (!assert_equals_int("output_1", 3, output_1)) {
+    return false;
+  }
+
+  char testcase_2 = 'd';
+  unsigned int output_2 = get_next_col(cur_col, testcase_2);
+  if (!assert_equals_int("output_2", 3, output_2)) {
+    return false;
+  }
+
+  char testcase_3 = 'D';
+  unsigned int output_3 = get_next_col(cur_col, testcase_3);
+  if (!assert_equals_int("output_3", 3, output_3)) {
+    return false;
+  }
+
+  char testcase_4 = '<';
+  unsigned int output_4 = get_next_col(cur_col, testcase_4);
+  if (!assert_equals_int("output_4", 1, output_4)) {
+    return false;
+  }
+
+  char testcase_5 = 'a';
+  unsigned int output_5 = get_next_col(cur_col, testcase_5);
+  if (!assert_equals_int("output_5", 1, output_5)) {
+    return false;
+  }
+
+  char testcase_6 = 'A';
+  unsigned int output_6 = get_next_col(cur_col, testcase_6);
+  if (!assert_equals_int("output_6", 1, output_6)) {
+    return false;
+  }
+
+  char testcase_7 = 'q';
+  unsigned int output_7 = get_next_col(cur_col, testcase_7);
+  if (!assert_equals_int("output_7", 2, output_7)) {
+    return false;
+  }
   return true;
 }
 
